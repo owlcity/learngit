@@ -1,5 +1,5 @@
-Creating a new branch is quick and simple
-r: owlcity
+/*
+* owlcity
 * @Date:   2017-09-06 09:55:24
 * @Last Modified by:   owlcity
 * @Last Modified time: 2017-09-06 14:20:31
@@ -70,40 +70,16 @@ r: owlcity
 		$ git branch -d dev
 11:解决冲突
 12:标签管理
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	$ git branch
+	$ git tag v1.0
+	$ git tag
+	找到历史commit id 然后打标签
+	$ git log --pretty=oneline --abbrev-commit
+	$ git tag v0.9 6224937
+	查看标签信息
+	$ git show v0.9
+	$ git tag -d v0.1
+	$ git push origin v1.0
 
 
 
