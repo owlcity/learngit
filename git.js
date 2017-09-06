@@ -2,7 +2,7 @@
 * @Author: owlcity
 * @Date:   2017-09-06 09:55:24
 * @Last Modified by:   owlcity
-* @Last Modified time: 2017-09-06 11:14:08
+* @Last Modified time: 2017-09-06 13:38:35
 */
 1:安装git
 2:创建版本库
@@ -48,7 +48,37 @@
 	删错了把误删的文件恢复到最新版本：
 	$ git checkout -- test.txt
 9:远程仓库
+	小结
+		-要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+
+		-关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+
+		-此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+	参考:
 	https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001374385852170d9c7adf13c30429b9660d0eb689dd43a000
+10:创建与合并分支
+	1:-创建dev分支，然后切换到dev分支：
+	$ git checkout -b dev
+		git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：
+		$ git branch dev
+		$ git checkout dev
+	$ git branch命令查看当前分支
+	git branch命令会列出所有分支，当前分支前面会标一个*号。
+	2:合并分支
+		$ git merge dev
+	3:合并完成后删除dev分支了
+		$ git branch -d dev
+11:解决冲突
+
+
+
+
+
+
+
+
+
+
 
 
 
