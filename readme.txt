@@ -8,3 +8,5 @@ append GPL
 one
 
 two
+
+Creating a new branch is quick
